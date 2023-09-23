@@ -30,12 +30,6 @@ const mathButtons = document.querySelectorAll('.calc-math-item');
         });
     });
 
-
-
-
-
-
-
     mathButtons.forEach((item) => {
         item.addEventListener('click', (e) => {
             let itemSymbol = e.target.textContent;
@@ -89,6 +83,7 @@ const mathButtons = document.querySelectorAll('.calc-math-item');
 
     //writing functions
 
+
     const log = () => {
         display.value = Math.log(display.value);
     }
@@ -106,7 +101,7 @@ const mathButtons = document.querySelectorAll('.calc-math-item');
     }
 
     const parce2 = () => {
-        display.value = display.value.toString(2);
+        display.value = (+display.value).toString(2);
     }
 
     const sin = () => {
@@ -114,7 +109,7 @@ const mathButtons = document.querySelectorAll('.calc-math-item');
     }
                
     const parce8 = () => {
-        display.value = display.value.toString(8);
+        display.value = (+display.value).toString(8);
     }
 
     const cos = () => {
@@ -122,10 +117,16 @@ const mathButtons = document.querySelectorAll('.calc-math-item');
     }
 
     const parce16 = () => {
-        display.value = display.value.toString(16);
+        display.value = (+display.value).toString(16);
     }
 
     const tan = () => {
         display.value = Math.tan(display.value);
     }
+   
+    
+    
+
+
+
    
